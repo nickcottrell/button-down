@@ -1,10 +1,14 @@
 <?//================================
+
 $pageName = "About - Subject";
+$pathExt = null;
 $layoutName = "default";
+$pageDescription = "This page is a button-down sub page of the about section";
+$pageKeywords = "sub, subject, about";
 
 //=================================
-$var = $_SERVER['DOCUMENT_ROOT'];
-include $var."/_thread.textile";
+$needle = $_SERVER['DOCUMENT_ROOT'];
+include $needle."/_thread.textile";
 //=================================?>
 
 <?top()?>

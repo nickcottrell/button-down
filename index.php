@@ -3,9 +3,12 @@
 $pageName = "Home";
 $pathExt = null;
 $layoutName = "default";
+$pageDescription = "This is the Home page.";
+$pageKeywords = "clean, php, simple";
 
 //=================================
-require '_thread.textile';
+$needle = $_SERVER['DOCUMENT_ROOT'];
+include $needle."/_thread.textile";
 //=================================?>
 
 <?top()?>

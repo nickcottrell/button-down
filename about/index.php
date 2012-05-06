@@ -1,10 +1,14 @@
 <?//================================
+
 $pageName = "About";
+$pathExt = null;
 $layoutName = "default";
+$pageDescription = "This page is about button-down";
+$pageKeywords = "button-down, about";
 
 //=================================
-$var = $_SERVER['DOCUMENT_ROOT'];
-include $var."/_thread.textile";
+$needle = $_SERVER['DOCUMENT_ROOT'];
+include $needle."/_thread.textile";
 //=================================?>
 
 <?top()?>

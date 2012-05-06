@@ -1,0 +1,7 @@
+<?layoutBttm()?>
+
+<!--DON'T FORGET ANALYTICS CODE-->
+<!--DON'T FORGET ANALYTICS CODE-->
+<!--DON'T FORGET ANALYTICS CODE-->
+</body>
+</html>

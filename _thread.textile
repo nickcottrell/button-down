@@ -1,0 +1,41 @@
+<?
+$_ENV['pageNameGLOB'] = $pageName;
+$_ENV['layoutNameGLOB'] = $layoutName;
+
+function top() {
+	include '_includes/header.textile';
+}
+
+function bttm() {
+	include '_includes/footer.textile';
+}
+
+function layoutTop() {
+	$var = $_ENV['layoutNameGLOB'];
+	include "_layouts/$var/top.textile";
+}
+
+function layoutBttm() {
+	$var = $_ENV['layoutNameGLOB'];
+	include "_layouts/$var/bttm.textile";
+}
+
+function navtop() {
+	include '_includes/nav.textile';
+}
+
+function navbttm() {
+	include '_includes/navfooter.textile';
+}
+
+function pathext() {
+	$var = $_SERVER['PATH_INFO'];
+	echo $var;
+}
+
+function pagename() {
+	$var = $_ENV['pageNameGLOB'];
+	echo $var;
+}
+
+?>

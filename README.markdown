@@ -1,8 +1,8 @@
 Button-down
 ===========
 
-A crisp, clean php template made by a designer
-----------------------------------------------
+A crisp, clean php template made with design in mind
+----------------------------------------------------
 
 ### Why?
 I made button down in an attempt to learn how to separate functionality, layout and content. I already knew some php (like, conditionals, includes and variables) and I was familiar with frameworks like [Jekyll](https://github.com/mojombo/jekyll) and enjoyed its elegant simplicity.

@@ -1,5 +1,12 @@
 <?//================================
 
+/*
+        /)                /) 
+    _/_(/   __   _  _   _(/  
+    (__/ )_/ (__(/_(_(_(_(_ 
+
+*/
+
 $_ENV['pageNameGLOB'] = $pageName;
 $_ENV['layoutNameGLOB'] = $layoutName;
 $_ENV['pageDescriptionGLOB'] = $pageDescription;

@@ -1,7 +1,6 @@
 <?//================================
 
 $pageName = "Home";
-$pathExt = null;
 $layoutName = "default";
 $pageDescription = "This is the Home page.";
 $pageKeywords = "clean, php, simple";

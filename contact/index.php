@@ -1,7 +1,6 @@
 <?//================================
 
 $pageName = "Contact";
-$pathExt = null;
 $layoutName = "default";
 $pageDescription = "This page is a button-down contact form.";
 $pageKeywords = "contact, form, submit";

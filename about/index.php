@@ -8,7 +8,7 @@ $pageKeywords = "button-down, about";
 
 //=================================
 $needle = $_SERVER['DOCUMENT_ROOT'];
-include $needle."/_thread.textile";
+include $needle."/_thread.php";
 //=================================?>
 
 <?top()?>

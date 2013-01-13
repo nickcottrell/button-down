@@ -1,20 +1,23 @@
-<?//================================
+<?
+$layout = "default";
+$meta_title = "Contact";
+$meta_description = "This page is a button-down contact form.";
+$meta_keywords = "contact, form, submit";
 
-$pageName = "Contact";
-$layoutName = "default";
-$pageDescription = "This page is a button-down contact form.";
-$pageKeywords = "contact, form, submit";
-
-//=================================
+// required
 $needle = $_SERVER['DOCUMENT_ROOT'];
 include $needle."/_thread.php";
-//=================================?>
+?>
 
 <?top()?>
 
 <h2>Contact</h2>
 
-<h3><?msgstatus()?></h3>
+<?if($SENT){?>
+	<h3>Your message has been sent.</h3>
+<?}else{?>
+	<h3>Type your message below.</h3>
+<?}?>
 
 <form name="form" method="post" action="<?contactsub()?>">
 Name<br />

@@ -1,15 +1,13 @@
-<?//================================
+<?
+$layout = "default";
+$meta_title = "About";
+$meta_description = "This page is about button-down";
+$meta_keywords = "button-down, about";
 
-$pageName = "About";
-$pathExt = null;
-$layoutName = "default";
-$pageDescription = "This page is about button-down";
-$pageKeywords = "button-down, about";
-
-//=================================
+// required
 $needle = $_SERVER['DOCUMENT_ROOT'];
 include $needle."/_thread.php";
-//=================================?>
+?>
 
 <?top()?>
 

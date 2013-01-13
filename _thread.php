@@ -6,16 +6,23 @@
     (__/ )_/ (__(/_(_(_(_(_ 
 
 */
+$LAYOUT = $layout;
+global $LAYOUT;
 
-$_ENV['pageNameGLOB'] = $pageName;
-$_ENV['layoutNameGLOB'] = $layoutName;
-$_ENV['pageDescriptionGLOB'] = $pageDescription;
-$_ENV['pageKeywordsGLOB'] = $pageKeywords;
+$TITLE = $meta_title;
+global $TITLE;
 
+$DESCRIPTION = $meta_description;
+global $DESCRIPTION;
 
-function pathext() {
-	$var = $_SERVER['PATH_INFO'];
-	echo $var;
+$KEYWORDS = $meta_keywords;
+global $KEYWORDS;
+
+if ($_REQUEST['sent'] == "yes") {
+	global $SENT;
+	$SENT = true;
+} else {
+	//do nothing
 }
 
 function top() {
@@ -27,13 +34,13 @@ function bttm() {
 }
 
 function layoutTop() {
-	$var = $_ENV['layoutNameGLOB'];
-	include "_layouts/$var/top.php";
+	global $LAYOUT;
+	include "_layouts/$LAYOUT/top.php";
 }
 
 function layoutBttm() {
-	$var = $_ENV['layoutNameGLOB'];
-	include "_layouts/$var/bttm.php";
+	global $LAYOUT;
+	include "_layouts/$LAYOUT/bttm.php";
 }
 
 function navtop() {
@@ -44,19 +51,19 @@ function navbttm() {
 	include '_includes/navfooter.php';
 }
 
-function pagename() {
-	$var = $_ENV['pageNameGLOB'];
-	echo $var;
+function metaTitle() {
+	global $TITLE;
+	echo $TITLE;
 }
 
-function pageDescription() {
-	$var = $_ENV['pageDescriptionGLOB'];
-	echo $var;
+function metaDescription() {
+	global $DESCRIPTION;
+	echo $DESCRIPTION;
 }
 
-function pageKeywords() {
-	$var = $_ENV['pageKeywordsGLOB'];
-	echo $var;
+function metaKeywords() {
+	global $KEYWORDS;
+	echo $KEYWORDS;
 }
 
 function contactsub() {
@@ -73,19 +80,7 @@ function contactsub() {
 
 	}
 	
-	$var = $_SERVER['PATH_INFO'];	
-	echo ($var.'?sent=yes');
-}
-
-function msgstatus() {
-	$val = $_GET['sent'];
-	
-	if ($val == "yes") {
-		echo "Your message has been sent."; 
-	}
-	else {
-		echo "Type your message below."; 
-	};
+	echo ($_SERVER['PATH_INFO'].'?sent=yes');
 }
 
 //=================================?>

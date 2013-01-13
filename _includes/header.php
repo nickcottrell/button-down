@@ -3,10 +3,10 @@
 <head>
 <meta charset="utf-8" />
 
-<title><?pageName()?></title>
+<title><?metaTitle();?></title>
 
-<meta name="description" content="<?pageDescription()?>"> 
-<meta name="keywords" content="<?pageKeywords()?>"> 
+<meta name="description" content="<?metaDescription();?>"> 
+<meta name="keywords" content="<?metaKeywords();?>"> 
 <meta name="author" content="Nick Cottrell, Brand Experience Designer">
 
 <!--[if lt IE 9]>

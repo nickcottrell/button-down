@@ -1,5 +1,5 @@
 body {
-	background-color:#C1E8FB;
+	background-color:#000;
 	margin:0;
 	padding:0;
 	width:100%;
@@ -13,9 +13,7 @@ body {
 	width:50%;
 	padding:36px 25% 100px 5%;
 	margin:0;
-	-webkit-box-shadow: 0 0 24px  #999;
-	   -moz-box-shadow: 0 0 24px  #999;
-	        box-shadow: 0 0 24px  #999;
+
 }
 
 footer {

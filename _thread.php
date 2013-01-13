@@ -1,11 +1,11 @@
-<?//================================
-
+<?
 /*
         /)                /) 
     _/_(/   __   _  _   _(/  
     (__/ )_/ (__(/_(_(_(_(_ 
 
 */
+
 $LAYOUT = $layout;
 global $LAYOUT;
 
@@ -67,7 +67,6 @@ function metaKeywords() {
 }
 
 function contactsub() {
-	
 	if(isset($_POST['Submit'])) {
 		$to = 'nick.a.cottrell@gmail.com' ; 
 		$subject = '** from button-down contact form **';
@@ -79,8 +78,7 @@ function contactsub() {
 			mail($to, $subject, $message, $headers);
 
 	}
-	
 	echo ($_SERVER['PATH_INFO'].'?sent=yes');
 }
 
-//=================================?>
+?>

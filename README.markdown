@@ -5,7 +5,7 @@ Crisp, clean php template
 ----------------------------------------------------
 
 ### Why?
-I made button down in an attempt to learn how to separate functionality, layout and content. I already knew some php (like, conditionals, includes and variables) and I was familiar with frameworks like [Jekyll](https://github.com/mojombo/jekyll) and enjoyed its elegant simplicity.
+I made button down in an attempt to learn how to separate functionality, layout and content. I was inspired by the organizational hierarchy of [Jekyll](https://github.com/mojombo/jekyll) and wanted to see if I could do something similar with PHP--removing the *export to static*, feature of course--but what the hell, right?
 
 ### The Controller
 *Thread* (or `_thread.php`) brings the whole thing together. It contains all of the functions that deliver modular elements and handles functionality (like the form handler script). The way it works is that *thread* is simply pulled in each file. Variables that are defined get converted into global variables that are used in various functions.

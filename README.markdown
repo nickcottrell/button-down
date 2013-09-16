@@ -1,7 +1,7 @@
 Button-down
 ===========
 
-A crisp, clean php template made with design in mind
+Crisp, clean php template
 ----------------------------------------------------
 
 ### Why?
